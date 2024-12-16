@@ -1,0 +1,16 @@
+{
+    "name": "postgresdatainhtlmvianodejs",
+    "version": "1.0.0",
+    "description": "justLookAtTheTitle",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js"
+    },
+    "dependencies": {
+        "dotenv": "^16.4.7",
+        "express": "^4.17.1",
+        "pg": "^8.7.1"
+    },
+    "author": "",
+    "license": "ISC"
+}

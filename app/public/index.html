@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="de">
+
+<header>
+    <link rel="stylesheet" href="styles.css">
+</header>
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Data
+    </title>
+</head>
+
+<body>
+    <h1>Daten der Schüler</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Alter</th>
+        </tr>
+      </thead>
+      <tbody id="data">
+        <script>
+          fetch('/data')
+            .then(response => response.json())
+            .then(data => {
+              const tableBody = document.getElementById('data');
+              data.forEach(row => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                  <td>${row.id}</td>
+                  <td>${row.studentname}</td>
+                  <td>${row.studentage}</td>
+                `;
+                tableBody.appendChild(tr);
+              });
+            })
+            .catch(error => console.error('Fehler beim Abrufen der Daten:', error));
+        </script>
+      </tbody>
+    </table>
+  </body>
+</html>

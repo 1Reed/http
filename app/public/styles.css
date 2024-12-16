@@ -1,0 +1,118 @@
+<!--BASIC STYLE-->
+:root {
+    --highlight_color: rgb(237, 0, 7);
+}
+
+body {
+    text-align: justify;
+    font-family: Georgia, 'Times New Roman', Times;
+    background-color: rgb(220, 220,220);
+}
+
+.inset {
+    padding-left: 10%;
+    padding-right: 10%;
+    align-items: center;
+}
+
+<!--TITLES-->
+h1 {
+    color: var(--highlight_color);
+    font-weight: bolder;
+    font-size: 3vw;
+}
+
+h2 {
+    color: var(--highlight_color);
+}
+
+h3 {
+    color: var(--highlight_color);
+}
+
+h4 {
+    margin-left: 2vw;
+    color: var(--highlight_color);
+}
+
+<!--TEXTS-->
+a {
+    color: rgb(00, 00,00);
+    text-decoration: none;
+}
+span {
+    color: var(--highlight_color);
+    font-variant: small-caps;
+}
+
+<!--IMAGES-->
+.main_picture {
+    display: block;
+}
+
+.main_picture img{
+    flex-direction: row;
+    width: 100%
+}
+
+.main_picture_text{
+    position: absolute;
+    align-content: center;
+    top: 4vw;
+    left: 15%;
+    color: white;
+    font-size: 1.2vw;
+    line-height: 2.5vw;
+}
+
+.main_picture_list {
+    margin-left: 2vw;
+}
+
+.main_picture_text p{
+    margin-left: 2vw;
+    font-size: 1.5vw;
+    font-weight: bold; 
+}
+
+.main_picture_text a{
+
+    color: white;
+    text-decoration: none;
+    }
+
+<!--LISTS-->
+dt {
+    font-weight: bold;
+}
+
+<!--BOTTOM ROW-->
+.bottomRow{
+    display: block;
+}
+
+.bottomRowBackground{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 12.5vw;
+    text-align: center;
+    align-items: center;
+    width: 60vw;
+    height: 50px;
+    border-radius: 10px;
+    background-color: var(--highlight_color);
+}
+
+.bottomRowObject {
+    width: 20vw;
+    text-align: center;
+    border-color: white;
+    border-style: double;
+    border-width: 1px;
+}
+
+.bottomRowLink{
+    font-size: 19px;
+    text-decoration: none;
+    color: white;
+}
